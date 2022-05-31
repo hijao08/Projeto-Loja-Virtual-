@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADASTRO</title>
+
+    <link rel="stylesheet" href="formulario.css" method="post">
+
+
+    <script type="text/javascript">
+
+        function Validardados(formClientes) {
+            if (formClientes.Nome.value == "") {
+                alert("Preencha seu nome.")
+                formClientes.Nome.focus()
+                return false
+            }
+            if (formClientes.Endereço.value == "") {
+                alert("Preencha seu Endereço.")
+                formClientes.Endereço.focus()
+                return false
+            }
+        
+            if (formClientes.email.value.indexOf("@") == -1 ||
+                formClientes.email.value.indexOf(".") == -1 ||
+                formClientes.email.value == "") {
+                alert("Preencha um E-Mail válido.")
+                formClientes.email.focus()
+                return false
+            }
+           
+            if (formClientes.Celular.value == "") {
+                alert("Preencha seu Celular.")
+                formClientes.Celular.focus()
+                return false
+            }
+            if (formClientes.Cpf.value == "") {
+                alert("Preencha seu CPF.")
+                formClientes.Cpf.focus()
+                return false
+
+            }
+            alert("Esta certo!")
+        }
+
+    </script>
+</head>
+<body>
+    <!--CABEÇALHO-->
+    <h1>Street Fashion</h1>
+    <header class="cabecalho">
+        <img class="cabecalho-imagem" src="https://www.zarla.com/images/zarla-inove-estilo-1x1-2400x2400-20211224-chf6t4qfq8bgy6ywck3g.png?crop=1:1,smart&width=250&dpr=2" alt=" LOGO">
+        <nav class="cabecalho-menu">
+            <button> <a class="cabecalho-menu-item" href="Home.html">HOME</a> </button>
+            <button> <a class="cabecalho-menu-item" href="calçados.html" >CALÇADOS</a> </button>
+            <button> <a class="cabecalho-menu-item" href="infantil.html" >MODA INFANTIL</a> </button>
+            <button> <a class="cabecalho-menu-item" href="camamesabanho.html" >CAMA, MESA E BANHO</a> </button>
+            <button> <a class="cabecalho-menu-item" href="vestuario.html" >VESTUÁRIO</a> </button>
+            <button> <a class="cabecalho-menu-item" href="contatos.html" >CONTATO</a> </button>
+            <button> <a class="cabecalho-menu-item" href="Feedback.html" >FEEDBACK</a> </button>
+            <button> <a class="cabecalho-menu-item" href="formulario.html" >CADASTRO</a> </button>
+            <a class="cabecalho-menu-carrinho" href="#" target="blank"><img class="carrinho" src="https://cdn-icons-png.flaticon.com/512/126/126510.png" alt="CARRINHO DE COMPRA"></a>  
+            
+        </nav>
+            
+    </header>
+<center>
+    <h1>CADASTRO</h1>
+    <section>
+        
+        <form action="formulario.html">
+            <!--NOME-->
+            <div>
+                <label for="Nome"> NOME COMPLETO:</label>
+                <input type="text" id="Nome" placeholder="DIGITE SEU NOME COMPLETO" value="" size="50" />
+            </div>
+            <!--Endereço-->
+            <div>
+                <label for="Endereço">Endereço:</label>
+                <input type="text" id="Endereço" placeholder="DIGITE SEU ENDEREÇO" value="" size="50" />
+            </div>
+            <!--E-mail-->
+            <div>
+                <label for="email">E-MAIL:</label>
+                <input type="text" id="email" placeholder="DIGITE SEU E-MAIL" value="" size="50" />
+            </div>
+            <!--CELULAR-->
+            <div>
+                <label for="Celular">CELULAR:</label>
+                <input type="text" id=Celular placeholder="DIGITE SEU CELULAR" value="" size="50" />
+            </div>
+            <!--CPF-->
+            <div>
+                <label for="Cpf">CPF:</label>
+                <input type="text" id="Cpf" placeholder="DIGITE SEU CPF" value="" size="50" />
+            </div>
+
+            <button type="button" name="Validar" value="Validar" onclick="Validardados(this.form)">Validar</button>
+            
+    </section>
+    </form>
+
+</center>
+ <!--RODA PÉ-->
+ <div class="roda-pe">
+    <p>
+        <n>Sobre nós:</n> <br>
+        A Street Fashion busca oferecer uma variedade de produtos de custo acessível
+        aos nossos clientes.<br>
+        Nosso lema é “entregar produtos de qualidade no menor 
+        tempo possível”. 
+        Também sabemos que, nos dias de hoje,<br>
+         a segurança cibernética é essencial.
+        Por este motivo implementamos em nosso site um complexo sistema <br>
+        anti-fraude 
+        que analisa todos os pagamentos processados em nosso sistema, assim como usamos
+        da criptografia <br>
+         para armazenar os dados de consumidores 
+        de forma segura e eficaz. 
+        O novo estilo de moda urbana tem sido muito bem recebida ao redor do mundo, 
+        trazendo de volta a simplicidade e elegância de peças de vestuário para o dia-a-dia do consumidor.
+    </p>
+    <p>
+        <n>Contato:</n> <br>
+        Preencha este formulário e deixe sua mensagem para que nosso time de suporte
+        possa entrar em contato com você para analisar e solucionar quaisquer problemas
+        que possam ocorrer <br>
+         durante a compra ou o envio de nossos produtos.
+    </p>
+</div>
+</body>
+</html>

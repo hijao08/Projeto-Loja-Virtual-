@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+body{
+    font-family: 'Tapestry', cursive;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+
+.cabecalho-imagem {
+    height: 100%;
+    width: 300px;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 32px;
+}
+
+.cabecalho-menu-item {
+    font-family: 'Tapestry', cursive;
+    color: #FFF2E7;
+    font-weight: 400;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 3px;
+    background-color: black
+}
+.carrinho{
+    width: 50px;
+    height: 50px;
+}
+/*PRODUTOS*/
+h1 {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+.produtos{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: block;
+}
+/*imgens do produto*/
+.t1{
+    max-width: 100%;
+    border: 1px solid black;
+    width: 30%;
+    height: 40%;
+}
+button{
+    background-color: black;
+    border-radius: 50px;
+}
+.roda-pe{
+    display: flex;
+    height: 70%;
+    width: 100%;
+    text-align: left;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+.produto{
+    background-color: black;
+    font-size: 50px;
+}
+.valor{
+    font-size: 50px;
+    
+}
+.descrição{
+    font-size: 30px;
+    text-align: left;
+}
+button{
+    background-color: black;
+    color: white;
+    width: 300px;
+    height: 100px;
+    font-size: 50px;
+}
